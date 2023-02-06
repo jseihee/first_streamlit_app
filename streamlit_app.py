@@ -28,6 +28,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 streamlit. header ('Fruityvice Fruit Advice!')
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
+
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 # streamlit.text(fruityvice_response.json ())
@@ -49,6 +50,6 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 #Another textboxt
-fruit_add = streamlit.text_input("What fruit would you like to add?")
+fruit_add = streamlit.text_input("What fruit would you like to add?", 'jackfruit')
 treamlit.write("Thanks for adding ", fruit_add)
 
